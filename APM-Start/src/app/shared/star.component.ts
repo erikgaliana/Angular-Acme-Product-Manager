@@ -12,5 +12,10 @@ export class StarComponent implements OnChanges {
     ngOnChanges(): void {
         this.starWidth = this.rating * 75 / 5;
     }
+
+    onClick(): void {
+            console.log(` This rating ${this.rating} was clicked`);
+
+    }
 }
 
